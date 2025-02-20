@@ -668,3 +668,13 @@ li {
     object-fit: cover;
     object-position: center;
 }
+@media screen and (max-width:1150px) {
+    .testimonials-wrapper{
+        flex-direction: column;
+        width: 100%;
+    } 
+    .testimonials-wrapper .testimonial{
+        width: 100%;
+    }
+   
+}

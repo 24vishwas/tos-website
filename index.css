@@ -412,6 +412,7 @@ li {
     background-color: #0b051076;
     width: 80%;
     padding: 50px 10px;
+    margin-inline: auto;
 }
 .home-hero-content h1{
     color: var(--primary-color);
@@ -419,7 +420,11 @@ li {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-
+.home-hero-content p{
+    color: var(--white-font);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 .home-img-container{
     position: absolute;
     z-index: -1;
@@ -439,6 +444,9 @@ li {
     .home-hero-content h1{
         font-size: 2.5rem;
     }
+    .home-hero-content p{
+        font-size: 1.2rem;
+    }
 }
 
 .horizontal-gap{
@@ -452,6 +460,7 @@ li {
     font-size:  clamp(2.5rem, 10vw, 8rem);
     color: var(--primary-color);
     font-weight: 400;
+    margin-bottom: 3%;
 }
 .who-we-are-container p{
     font-size: clamp(1.2rem, 3vw, 1.5rem);
@@ -467,6 +476,7 @@ li {
     font-size:  clamp(2.5rem, 10vw, 8rem);
     color: var(--bg-color);
     font-weight: 400;
+    margin-bottom: 4%;
 }
 .what-we-do-container p{
     font-size: clamp(1.2rem, 3vw, 1.5rem);
@@ -540,6 +550,7 @@ li {
     color: var(--primary-yellow);
     font-weight: 400;
     text-align: center;
+    margin-bottom: 4%;
 }
 .portfolio-cards-container{
     display: flex;
@@ -597,6 +608,7 @@ li {
     color: var(--primary-blue);
     font-weight: 400;
     text-align: center;
+    margin-bottom: 4%;
 }
 
 .founders .img-wrapper img{
@@ -648,6 +660,7 @@ li {
     color: var(--bg-color);
     font-weight: 400;
     text-align: center;
+    margin-bottom: 4%;
 }
 .recognition .img-wrapper img{
     width: 100%;
@@ -678,6 +691,7 @@ li {
     color: var(--primary-color);
     font-weight: 400;
     text-align: center;
+    margin-bottom: 4%;
 }
 .testimonials-wrapper{
     display: flex;
@@ -933,6 +947,7 @@ footer{
     font-size:  clamp(2.5rem, 10vw, 8rem);
     color: var(--bg-color);
     font-weight: 400;
+    margin-bottom: 4%;
 }
 .service-whatwedo-container p{
     font-size: clamp(1.2rem, 3vw, 1.5rem);
@@ -972,4 +987,230 @@ footer{
     display: block;
     text-align: center;
     margin-top: 16px;
+}
+
+.vision-list li{
+    margin-top: 10px;
+    list-style: disc;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+/* contact-section */
+.contact-section{
+    margin-block: 5%;
+    padding-block: 5%;
+    background-color: var(--primary-blue);
+    color: var(--black-font);
+}
+.contact-section p{
+    text-align: center ;
+    font-size: 2rem;
+    color: var(--violvet);
+}
+.contact-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+     font-size: 2rem;
+}
+@media screen and (max-width:600px) {
+    .contact-section{
+        margin-block: 10%;
+        padding-block:20%;
+    }
+    
+}
+
+/* contact-section end */
+
+
+.list-title{
+    font-weight: 600;
+    color: var(--primary-blue);
+    display: block;
+    margin-bottom: 20px;
+}
+.list-title-center{
+    font-weight: 600;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.tick-icon{
+    width: 35px !important;
+    height: 35px !important;
+    margin-right: 10px;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+.why-choose-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.why-choose-list li{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 20px;
+    width: calc(50% - 20px);
+    border: 1px solid var(--primary-blue);
+    padding: 20px;
+    border-radius: 20px;
+}
+@media screen and (max-width:768px) {
+    .why-choose-list li{
+        width: 100%;
+    }
+    
+}
+
+
+/* faq */
+.faq-section h1{
+    font-size:  clamp(2.5rem, 10vw, 8rem);
+    color: var(--bg-color);
+    font-weight: 400;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.faq-container {
+    /* background: white; */
+    padding: 20px;
+    color: var(--blue-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item {
+    border-bottom: 1px solid #dddddd85;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    font-size: 1.1rem;
+    color: var(--white-font);
+    opacity: 0.8;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    padding: 0 10px;
+}
+
+.faq-item.active .answer {
+    max-height: 500px;
+    padding: 10px 10px;
+}
+
+.faq-item .arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+}
+.faq-item .arrow img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+/* faq end */
+
+
+
+/* pricing section */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.pricing-card {
+   
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border-top: 5px solid #007bff;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.plan-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.features {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.features li {
+    margin-bottom: 8px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.checkmark::before {
+    content: "✔";
+    color: green;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Crossmark class */
+.crossmark::before {
+    content: "✖";
+    color: red;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.price- btn {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--blue2);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.price- btn:hover {
+    background: #0056b3;
 }

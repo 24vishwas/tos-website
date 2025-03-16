@@ -10,9 +10,26 @@
 <style>
     .casestudy-title{
         text-align: center;
-        font-size: 9.5rem;
+        font-size:  clamp(2.5rem, 10vw, 48px) !important;
         color: var(--primary-blue);
         margin-bottom: 5%;
+    }
+    .casestudy-subheading{
+        text-align: center; 
+        font-size: clamp(2rem, 3vw, 40px) !important; 
+        color: var(--primary-blue); 
+        margin-bottom: 5%;
+        margin-top: 20px;
+    }
+    .casestudy-list-container{
+        
+    }
+    .casestudy-list{
+        list-style-type: disc;
+        /* list-style: georgian; */
+        font-size: clamp(1.2rem, 3vw, 1.5rem) !important;
+        line-height: 2.5rem;
+        color: var(--white-font);
     }
 </style>
 <body>
@@ -59,7 +76,7 @@
     </nav>
     <div class="horizontal-gap"></div>
     <section id="service-details-hero">
-        <div class="container service-details-hero-container">
+        <div class="container casestudy service-details-hero-container">
             <h1 class="casestudy-title">CaseStudy Title</h1>
             <div class="img-wrapper">
                 <picture>
@@ -69,7 +86,7 @@
                     <img src="assets/that-music-cover-img/tab.png" alt="The One Solutions">
                 </picture>
             </div>
-            <h2 style="text-align: center; font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 5%;margin-top: 20px;">
+            <h2 class="casestudy-subheading">
                 Case study Subheading</h2>
             <p>
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, deleniti. Rerum, laborum et. Non quod maiores sapiente velit, ratione voluptates suscipit sed minus modi repellendus quasi similique repellat officia corrupti nam eos hic consequuntur repudiandae officiis iure cumque sequi! A porro eos, unde ullam optio facilis facere aspernatur mollitia repellendus.
@@ -77,168 +94,21 @@
         </div>
     </section>
     <div class="horizontal-gap"></div>
-    <section id="service-whatwedo ">
-        <div class=" service-whatwedo-container container">
-            <!-- <h1 style="color: var(--primary-red);"> ?</h1> -->
-
-            <div class="service-whatwedo-content">
-                <!-- <h2 style="color: var(--primary-color);">Website Development</h2> -->
-                <ul class="why-choose-list">
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/flag-icon.svg"
-                                alt="img">Custom Business Website Development :</span>
-                        <p> Uniquely designed, high-performing websites tailored to your brand.</p>
-                    </li>
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/flag-icon.svg"
-                                alt="img">eCommerce Website Development :</span>
-                        <p> Secure, scalable, and conversion-driven online stores built from the ground up.</p>
-                    </li>
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/flag-icon.svg"
-                                alt="img">Static & Dynamic Website Solutions :</span>
-                        <p> Fully responsive websites that deliver seamless user experiences.</p>
-                    </li>
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/flag-icon.svg"
-                                alt="img">Mobile-Optimized Website Development :</span>
-                        <p> Designed for fast loading and perfect responsiveness on all devices.</p>
-                    </li>
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/flag-icon.svg"
-                                alt="img">Website Maintenance & Security :</span>
-                        <p> Ongoing updates, performance optimization, and security enhancements.</p>
-                    </li>
-                </ul>
-                <!-- <a href="#contact" class="circle-btn"></a> -->
-            </div>
-
-
-        </div>
-        <div class="horizontal-gap"></div>
-        <div class=" service-whatwedo-container container">
-            <h1 style="color: var(--primary-red);">Case study ?</h1>
-
-            <div class="service-whatwedo-content">
-                <!-- <h2 style="color: var(--primary-color);">Website Development</h2> -->
-                <ul class="why-choose-list">
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/tick-icon.svg" alt="img"> No
-                            WordPress, No Templates :</span>
-                        <p>100% custom-coded websites built for performance.</p>
-                    </li>
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/tick-icon.svg" alt="img">
-                            SEO & Speed Optimized :</span>
-                        <p>Engineered for fast loading, high rankings, and great user experience.</p>
-                    </li>
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/tick-icon.svg" alt="img">
-                            Bespoke UI/UX Design :</span>
-                        <p>Unique, visually appealing interfaces designed from scratch.</p>
-                    </li>
-                    <li>
-                        <span class="list-title-center"><img class="tick-icon" src="./icons/tick-icon.svg" alt="img">
-                            Global Reach, Local Adaptability :</span>
-                        <p>Websites built for businesses worldwide, with regional customizations as needed.</p>
-                    </li>
-                </ul>
-                <!-- <a href="#contact" class="circle-btn"></a> -->
-            </div>
-
-
+    <section>
+        <div class="container">
+            <h2 class="casestudy-subheading"> Adding subheading</h2>
+            <ul class="casestudy-list-container">
+                <li class="casestudy-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, corporis.</li>
+                <li class="casestudy-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, corporis.</li>
+                <li class="casestudy-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, corporis.</li>
+                <li class="casestudy-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, corporis.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, corporis.</li>
+            </ul>
         </div>
     </section>
-
-    <div class="horizontal-gap"></div>
-
-    <section class="pricing-sction">
-
-    <h2>Our Pricing Plans</h2>
-
-    <div class="pricing-container container">
-
-        <!-- Local Business Plan -->
-        <div class="pricing-card" >
-            <div class="plan-name">Local Business</div>
-            <div class="price">₹12,000</div>
-            <ul class="features">
-                <li class="checkmark">Client-Provided Domain & Hosting</li>
-                <li class="checkmark">Pre-designed Templates</li>
-                <li class="crossmark">Template Customization</li>
-                <li class="checkmark">1 Page</li>
-                <li class="crossmark">Additional Pages</li>
-                <li class="crossmark">Only Basic Technical SEO</li>
-                <li class="crossmark">$5 per word or provided by client</li>
-                <li class="crossmark">Only Client-provided or charged per image (Stock requires attribution).></li>
-                <li class="crossmark">Only 2 Working Days</li>
-                <li class="checkmark">Extra Functionalities Available</li>
-            </ul>
-            <a href="#" class="price-btn">Choose Plan</a>
-        </div>
-
-        <!-- Small Business Plan -->
-        <div class="pricing-card " >
-            <div class="plan-name">Small Business</div>
-            <div class="price">₹25,000</div>
-            <ul class="features">
-                <li class="checkmark">Client-Provided Domain & Hosting</li>
-                <li class="checkmark">Premium Template</li>
-                <li class="crossmark">Template Customization</li>
-                <li class="checkmark">8 Pages</li>
-                <li class="checkmark">$1,000 per Additional Pages</li>
-                <li class="crossmark">Only Basic Technical SEO</li>
-                <li class="checkmark">$7 per word or provided by client"></li>
-                <li class="crossmark">Only Client-provided or charged per image (Stock requires attribution).></li>
-                <li class="checkmark">Only 7 Working Days"></li>
-                <li class="checkmark">Extra Functionalities Available</li>
-            </ul>
-            <a href="#" class="price-btn">Choose Plan</a>
-        </div>
-
-        <!-- Startups Plan -->
-        <div class="pricing-card" >
-            <div class="plan-name">Startups</div>
-            <div class="price">₹59,999</div>
-            <ul class="features">
-                <li class="checkmark">Client-Provided Domain & Hosting</li>
-                <li class="checkmark">Exclusive, Unique Design</li>
-                <li class="checkmark">Tamplate Fully Customizable</li>
-                <li class="checkmark">15 Pages</li>
-                <li class="checkmark">More then 20 pages? Opt for Custom CMS Plan</li>
-                <li class="checkmark">Advanced SEO Features</li>
-                <li class="checkmark">Content included in the package</li>
-                <li class="checkmark">Premium Stock Images Included</li>
-                <li class="checkmark">15 Working Days</li>
-                <li class="checkmark">Premium Stock Images Included</li>
-            </ul>
-            <a href="#" class="price-btn">Choose Plan</a>
-        </div>
-
-        <!-- Medium & Corporate Plan -->
-        <div class="pricing-card " >
-            <div class="plan-name">Medium & Corporate</div>
-            <div class="price">Custom Pricing</div>
-            <ul class="features">
-                <li class="checkmark">Client-Provided Domain & Hosting</li>
-                <li class="checkmark">Exclusive, Tailor-Made Design</li>
-                <li class="checkmark">Tamplate Fully Customizable</li>
-                <li class="checkmark">Unlimited Pages</li>
-                <li class="checkmark">Custom Pricing</li>
-                <li class="checkmark">Enterprise-Grade SEO Optimization</li>
-                <li class="checkmark">Content included in the package</li>
-                <li class="checkmark">Premium Stock Images Included</li>
-                <li class="checkmark">Days depends on the project scope</li>
-                <li class="checkmark">All Functionalities Included</li>
-            </ul>
-            <a href="#" class="price-btn">Choose Plan</a>
-        </div>
-
-    </div>
-    </section>
+    
 
   
-    <div class="horizontal-gap"></div>
     <!-- <section class="portfolio">
         <div class="container">
             <h1>Our Portfolio</h1>
@@ -319,123 +189,7 @@
         </div>
     </section> -->
 
-
-    <section class="horizontal-gap"></section>
-    <section class="faq-section">
-        <div class="faq-container container">
-            <div class="faq-item">
-                <div class="question">
-                    1. Why is custom website development better than using WordPress or template-based websites? <span
-                        class="arrow"><img src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    Custom websites provide better performance, enhanced security, and full scalability, unlike
-                    WordPress or pre-made templates, which often come with slow loading speeds, plugin dependencies, and
-                    security vulnerabilities. With our custom-coded website solutions, your business gets a unique
-                    design, optimized SEO, and long-term reliability.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    2. How does a fast-loading website help my business? <span class="arrow"><img
-                            src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    A website that loads in under 2.5 seconds improves user engagement, SEO rankings, and conversion
-                    rates. Slow websites lead to high bounce rates, negatively affecting Google rankings and customer
-                    trust. Our websites are built using lightweight code, advanced caching, and speed optimizations for
-                    maximum performance.
-
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    3. Do you provide eCommerce website development?<span class="arrow"><img
-                            src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    Yes, we develop high-performance eCommerce websites with custom UI/UX design, secure payment
-                    gateways, and seamless user experiences. Our eCommerce sites are optimized for mobile users, SEO
-                    visibility, and high conversions to help businesses increase online sales.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    4. How does a mobile-friendly website impact my business? <span class="arrow"><img
-                            src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    Over 60% of global web traffic comes from mobile users. A fully responsive website ensures better
-                    user experience, lower bounce rates, and higher search engine rankings, helping your business reach
-                    a wider audience and improve sales.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    5. What industries do you develop websites for?
-                    <span class="arrow"><img src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    We create custom business websites for corporate firms, eCommerce brands, healthcare, real estate,
-                    finance, startups, and service-based businesses. Our solutions are tailored to each industry’s
-                    unique digital needs.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    6. Can you integrate third-party tools and APIs into my website? <span class="arrow"><img
-                            src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    Yes, we develop custom solutions with API integrations, including payment gateways, CRM software,
-                    marketing automation, and analytics tools, ensuring a feature-rich and scalable website.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    7. How does a well-designed website improve SEO rankings? <span class="arrow"><img
-                            src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    A properly structured website with clean code, optimized images, fast-loading pages, and
-                    user-friendly navigation enhances SEO rankings. Google prioritizes mobile-responsive, secure, and
-                    well-structured websites, which we ensure in every project.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    8. Do you offer website maintenance and security services? <span class="arrow"><img
-                            src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    Yes, we provide ongoing website maintenance, security updates, and performance optimizations to keep
-                    your site secure from cyber threats and running at peak performance.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    9. How long does it take to build a custom website?
-                    <span class="arrow"><img src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    The timeline depends on the complexity and functionality of the website. A simple business website
-                    may take 2-4 weeks, while a fully customized, feature-rich site could take 6-12 weeks.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="question">
-                    10. How do I get started with your website development services?
-                    <span class="arrow"><img src="./icons/down-arrow-icon.svg" alt="img"></span>
-                </div>
-                <div class="answer">
-                    Simply contact us to discuss your project requirements. We’ll analyze your business needs, create a
-                    tailored development plan, and deliver a high-quality, scalable website that meets your goals.
-                </div>
-            </div>
-        </div>
-    </section>
     <div class="horizontal-gap"></div>
-
     <footer id="contact" class="gradient-bg">
         <div class="footer-container ">
             <ul class="footer-wrapper">
